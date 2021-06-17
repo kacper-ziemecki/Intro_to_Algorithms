@@ -1,0 +1,5 @@
+fordFulkersonMethod(G, s, t)
+initialize flow f to 0 
+while there exists an augmenting path p in the residual network G f
+  augment flow f along p 
+return f 

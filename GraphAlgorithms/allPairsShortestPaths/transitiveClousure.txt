@@ -1,0 +1,15 @@
+transitiveClousure(G)
+n = |G.V|
+let T (0) = (t (0) tj) be a new n x n matrix
+for i = 1 to n 
+  for j = 1 to n 
+    if i ==j of (i, j) E G.E
+      t (0) tj = 1 
+    else 
+      t (0) tj = 0
+for k = 1 to n 
+  let T (k) = (t (k) ij) be a new n x n matrix
+  for i = 1 to n 
+    for j = 1 to n 
+      t (k) ij = t (k - 1) ij or (t (k - 1) ik and t (k - 1) kj)
+return T (n)

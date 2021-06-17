@@ -1,0 +1,8 @@
+fasterAllPairsShortestPaths(W)
+n = W.rows
+L (1) = W 
+m = 1
+while m < n - 1 
+  let L (2m) be a new n x n matrix 
+  L (2m) = EXTENDED-SHORTEST-PATHS(L (m), L (m))
+return L (m)

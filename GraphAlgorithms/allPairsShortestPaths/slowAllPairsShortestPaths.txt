@@ -1,0 +1,6 @@
+n = W.rows
+L (1) = W
+for m = 2 to n - 1
+  let L (m) be a new n x n matrix
+  L (m) = EXTENDED-SHORTEST-PATHS(L (m - 1), W)
+return L (n - 1)
