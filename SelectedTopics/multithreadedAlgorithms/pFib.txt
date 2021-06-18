@@ -1,0 +1,9 @@
+pFib(n) 
+if n <= 1
+  return n 
+else
+  spawn
+  x = FIB(n - 1)
+  y = FIB(n - 2)
+  sync
+  return x + y

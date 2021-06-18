@@ -1,0 +1,7 @@
+fib(n) 
+if n <= 1
+  return n 
+else
+  x = FIB(n - 1)
+  y = FIB(n - 2)
+  return x + y

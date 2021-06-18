@@ -1,0 +1,4 @@
+relabel(u)
+//Aplies when: u is overflowing and for all v E V seuch that (u, v) E E f, we have u.h <= v.h 
+//Action: increase the height of u 
+u.h = 1 + min{v.h : (u, v) E E f}

@@ -1,0 +1,12 @@
+ralabelToFront(S, s, t)
+INITIALIZE-PREFLOW(G, s)
+L = G.V - {s, t}, in any order 
+for each vertex u E G.V - {s, t} 
+  u.current = u.N.head
+u = L.head 
+while u != NIL 
+  old-height = u.h 
+  DISCHARGE(u) 
+  if u.h > old-height
+    move u to the front of list L 
+  u = u.next

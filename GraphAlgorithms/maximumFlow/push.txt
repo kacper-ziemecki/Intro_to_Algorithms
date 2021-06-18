@@ -1,0 +1,11 @@
+push(u, v)
+// Applies when: u is overflowing, c f (u, v) > 0, and u.h = v.h + 1
+//Action: Push /\f(u, v) = min(u.r, c f (u ,v)) units of flow from u to v 
+/\f (u, v) E E 
+if (u, v) E E 
+  (u, v).f = (u, v).f + /\f (u, v) 
+else 
+  (u, v).f = (u, v).f - /\f (u, v)
+  u.e = u.e - /\f (u, v)
+  v.e = v.e + /\f (u, v)
+  
