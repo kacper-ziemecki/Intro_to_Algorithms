@@ -1,0 +1,3 @@
+vebEmpyTreeInsert(V, x)
+V.min = x
+V.max = x

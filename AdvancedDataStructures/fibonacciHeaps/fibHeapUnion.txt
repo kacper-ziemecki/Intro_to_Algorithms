@@ -1,0 +1,8 @@
+fibHeapUnion(H 1, H 2)
+H = MAKE-FIB-HEAP()
+H.min = H 1.min
+concatate the root list of H 2 with the root list of H 
+if(H 1.min == NIL) or (H 2.min != NIL and H 2.min.key < H 1.min.key)
+  H.min = H 2.min
+H.n = H 1.n + H 2.n
+return H

@@ -1,0 +1,2 @@
+parent(i)
+return floor(i/2)

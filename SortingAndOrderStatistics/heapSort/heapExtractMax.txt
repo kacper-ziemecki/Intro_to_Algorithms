@@ -1,0 +1,8 @@
+heapExtractMax(A)
+if A.heap-size < 1
+  error "heap udnerfow"
+max = A[1]
+A[1] = A[A.heap-size]
+A.heap-size = A.heap-size - 1
+MAX-HAPIFY(A, 1)
+return max

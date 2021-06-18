@@ -1,0 +1,10 @@
+martixMultiply(A, B)
+if A.columns != B.rows
+  error "incompatible dimensions" 
+else 
+  let C be a new A.rows X B.columns matrix
+  for i = 1 to A.rows
+    for j = 1 to B.columns
+      c ij = 0
+      for k = 1 tp A.columns 
+        c ij = c ij + a ik * b kj

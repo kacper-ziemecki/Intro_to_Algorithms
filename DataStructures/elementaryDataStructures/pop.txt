@@ -1,0 +1,6 @@
+pop(S)
+if STACK-EMPTY(S) 
+  error "udnerfow"
+else
+  S.top = S.top - 1
+  return S[S.top + 1]

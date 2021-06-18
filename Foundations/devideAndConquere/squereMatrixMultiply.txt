@@ -1,0 +1,9 @@
+squereMatrixMultiply(A, B)
+n = A.rows 
+let C be a new n x n matrix
+for i = 1 to n
+  for j = 1 to n 
+    c ij = 0
+    for k = 1 to n 
+      c ij = c ij + a ik * b kj
+return C

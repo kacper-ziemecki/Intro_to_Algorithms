@@ -1,0 +1,4 @@
+topologicalSort(G)
+call DFS(G) to compute finishing times v.f for each vertex v
+as each vertex is finished, insert it onto front of a linked list 
+return the linked list of vertices

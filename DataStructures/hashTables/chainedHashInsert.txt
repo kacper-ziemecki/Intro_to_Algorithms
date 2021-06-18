@@ -1,0 +1,2 @@
+chainedHashInsert(T, x)
+insert x at the head of list T[h(x.key)]

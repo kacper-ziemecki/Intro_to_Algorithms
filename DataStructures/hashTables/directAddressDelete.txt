@@ -1,0 +1,2 @@
+directAddressDelete(T, x)
+T[x.key] = NIL

@@ -1,0 +1,2 @@
+directAddrectSearch(T, k)
+return T[k]

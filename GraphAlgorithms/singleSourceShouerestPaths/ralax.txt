@@ -1,0 +1,4 @@
+ralax(u, v, w)
+if v.d > u.d + w(u, v) 
+  v.d = ud.d + w(u, v) 
+  v.pi = u

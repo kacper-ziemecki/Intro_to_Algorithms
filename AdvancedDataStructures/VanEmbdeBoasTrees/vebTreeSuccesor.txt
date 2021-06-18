@@ -1,0 +1,24 @@
+vebTreeSuccesor(V, x)
+if V.u == 2
+  if x == 0 and V.max == 1
+    return 1
+  else
+    return NIL
+else if V.min != NIL and x < V.min
+  return V.min
+else
+  max-low = VEB-TREE-MINIMUM(V.cluster[high(x)])
+  if max-low != NIL and low(x) < max-low
+    offset = VEB-TREE-SUCCESOR(V.summary, high(x))
+    return index(high(x), offset)
+  else
+    succ-cluster = VEB-TREE-SUCCESOR(V.summary, high(x))
+    if succ-cluster == NIL
+      return NIL
+    else
+      offset = VEB-TREE-MINIMUM(V.cluster[succ-cluster])
+      if succ-cluster == NIL
+        return NIL
+      else
+        offset = VEB-TREE-MINIMUM(V.cluster[succ-cluster])
+        return index(succ-cluster, offset)

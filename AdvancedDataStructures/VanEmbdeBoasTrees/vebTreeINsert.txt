@@ -1,0 +1,13 @@
+vebTreeINsert(V, x)
+if V.min == NIL
+  VEB-EMPTY-TREE-INSERT(V, x)
+else if x < V.min 
+  exchage x with V.min
+  if V.u > 2
+    if VEB-TREE-MINIMUM(V.cluster[high(x)]) == NIL
+      VEB-TREE-INSERT(V.summary, high(x)) 
+      VEB-EMPTY-TREE-INSERT(V.cluster[high(x)], low(x)) 
+    else
+      VEB-TREE-INSERT(V.cluster[high(x)], low(x))
+  if x > V.max 
+    V.max = x

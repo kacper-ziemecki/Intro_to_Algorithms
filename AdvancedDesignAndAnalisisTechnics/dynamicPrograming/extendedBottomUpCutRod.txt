@@ -1,0 +1,11 @@
+extendedBottomUpCutRod(p, n)
+let t[0 ..n] and s[1 ..n] be a new array 
+r[0] = 0
+for j = 1 to n 
+  q = -INFINITY
+  for i = 1 to j
+    if q < p[i] + r[j - i]
+      q = p[i] + r[j - i] 
+      s[j] = i
+  r[j] = q
+return r and s]

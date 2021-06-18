@@ -1,0 +1,21 @@
+bTreeSplitChild(x, i)
+z = ALLOCATE-NODE()
+y = x.c i 
+z.leaf = y.leaf
+z.n = t - 1
+for j = 1 to t - 1 
+  z.key = y.key j+1
+if not y.leaf
+  for j = 1 to t 
+    z.c j = y.c j+1
+y.n = t - 1
+for j = x.x + 1 downto i + 1
+  x.c j+1 = x.c j 
+x.c i+1 = z
+for j = x.n downto i  
+  x.key j+1 = x.key j  
+x.key i = y.key t 
+x.n = x.n + 1
+DISK-WRITE(y)
+DISK-WRITE(z)
+DISK-WRITE(x)

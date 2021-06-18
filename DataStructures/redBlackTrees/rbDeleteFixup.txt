@@ -1,0 +1,25 @@
+rbDeleteFixup(T, x)
+while x != T.root and x.color == BLACK
+  if x == x.p.left
+    w = x.p.right
+    if w.color == RED
+      w.color = BLACK
+      x.p.color = RED
+      LEFT-ROTATE(T, x.p)
+      w = x.p.right
+    if w.color == BLACK and w.right.color == BLACK
+      w.color = RED
+      x = x.p
+    else if w.right.color == BLACK
+      w.left.color = BLACK
+      w.color = RED
+      RIGHT-ROTATE(T, w) 
+      w = x.p.right
+    w.color = x.p.color
+    x.p.color = BLACK
+    w.right.color = BLACK
+    LEFT-ROTATE(T, x.p)
+    x = T.root 
+  else 
+    same as then clause with "right" and "left" exchanged
+x.color = BLACK

@@ -1,0 +1,19 @@
+bfs(G, s)
+for each vertex u E G.V - {s}
+  u.color = WHITE
+  u.d = INFINITY
+  u.pi = NIL
+s.color = GREY
+s.d = 0
+s.pi = NIL
+Q = 0
+ENQUEUE(Q, s) 
+while Q != 0
+  u = DEQUEUE(Q)
+  for each v E G.Adj[u]
+    if v.color == WHITE
+      v.color = GRAY
+      v.d = u.d + 1
+      v.pi = u
+      ENQUEUE(Q, v) 
+  u.color = BLACK

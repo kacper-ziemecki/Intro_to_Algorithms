@@ -1,0 +1,2 @@
+left(i)
+return 2 * i

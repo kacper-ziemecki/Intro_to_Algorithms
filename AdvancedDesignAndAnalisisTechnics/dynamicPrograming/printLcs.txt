@@ -1,0 +1,10 @@
+printLcs(b, X, i, j)
+  if i == 0 or j == 0
+    return 
+  if b[i, j] == "\"
+    PRINT-LCS(b, X, i - 1, j - 1) 
+    print x i 
+  else if b[i, j] == "|"
+    PRINT-LCS(b, X, i - 1, j)
+  else 
+    PRINT-LCS(b, X, i, j - 1)

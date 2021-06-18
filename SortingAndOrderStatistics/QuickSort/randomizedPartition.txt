@@ -1,0 +1,4 @@
+randomizedPartition(A, p, r)
+i = RANDOM(p, r)
+exchange A[r] with A[i]
+return PARTITION(A, p, r)

@@ -1,0 +1,2 @@
+chainedHashDelete(T, x)
+delete x from the list T[h(x.key)]

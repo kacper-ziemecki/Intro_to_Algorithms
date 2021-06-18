@@ -1,0 +1,4 @@
+stackEmpy(S)
+if S.top == 0 
+  return TRUE
+return FALSE

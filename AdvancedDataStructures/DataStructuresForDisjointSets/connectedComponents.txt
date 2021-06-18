@@ -1,0 +1,6 @@
+connectedComponents(G)
+for each vertex v E G.V 
+  MAKE-SET(v)
+for each edge (u, v) E G.E 
+  if FIND-SET(u) != FIND-SET(v)
+    UNION(u, v)

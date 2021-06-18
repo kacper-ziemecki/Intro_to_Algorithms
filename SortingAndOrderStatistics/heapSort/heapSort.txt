@@ -1,0 +1,6 @@
+heapSort(A)
+BUILD-MAX-HEAP(A)
+for i = A.length downto 2
+  exchange A[1] with A[i]
+  A.heap-size = A.heap-size - 1
+  MAX-HEPIFY(A, 1)

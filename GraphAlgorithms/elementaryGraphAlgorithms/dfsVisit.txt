@@ -1,0 +1,11 @@
+dfsVisit(G, u)
+time = time + 1
+u.d = time
+u.color = GRAY
+for each v E G.Adj[u]
+  if v.color == WHITE
+    v.pi = u
+    DFS-VISIT(G, v)
+u.color = BLACK
+time = time + 1
+u.f = time

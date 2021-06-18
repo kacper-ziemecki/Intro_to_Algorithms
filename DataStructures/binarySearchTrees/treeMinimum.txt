@@ -1,0 +1,4 @@
+treeMinimum(x)
+while x.left != NIL 
+  x = x.left 
+return x

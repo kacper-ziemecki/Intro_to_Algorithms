@@ -1,0 +1,4 @@
+treeMaximum(x)
+while x.right != NIL 
+  x = x.right 
+return x

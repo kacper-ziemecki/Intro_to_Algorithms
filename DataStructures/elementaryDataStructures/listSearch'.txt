@@ -1,0 +1,5 @@
+listSearch'(L, k)
+x = L.nil.next
+while x != L.nil and x.key != k 
+  x = x.next
+return x

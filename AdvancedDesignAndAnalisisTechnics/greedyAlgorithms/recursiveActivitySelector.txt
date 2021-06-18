@@ -1,0 +1,8 @@
+recursiveActivitySelector(s, f, k, n)
+m = k + 1
+while m <= n and s[m] < f[k]
+  m = m + 1 
+if m <= n 
+  return {a m} U RECURSIVE-ACTIVITY-SELECTOR(s, f, m, n)
+else 
+  return 0 

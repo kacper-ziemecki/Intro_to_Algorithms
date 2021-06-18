@@ -1,0 +1,13 @@
+mstPrim(G, w, r)
+for each u E G.V 
+  u.key = INFINITY
+  u.pi = NIL
+r.key = 0
+Q = G.V 
+while Q != 0
+  u = EXTRACT-MIN(Q)
+  for each v E G.Adj[u] 
+    if v E Q and w(u, v) < v.key 
+      v.pi = u
+      v.key = w(u, v)
+      

@@ -1,0 +1,4 @@
+fibHeapLink(H, y, x)
+remove y from the root list of H 
+make y a child of x, incrementing x.degree
+y.mark = FALSE

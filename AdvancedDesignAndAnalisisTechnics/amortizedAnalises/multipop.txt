@@ -1,0 +1,4 @@
+multipop(S, k)
+while not STACK-EMPTY(S) and k > 0 
+  POP(S)
+  k = k - 1

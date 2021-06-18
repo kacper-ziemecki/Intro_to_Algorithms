@@ -1,0 +1,8 @@
+osSelect(x, i)
+r = x.left.size + 1
+if i == r
+  return x
+else if i < r 
+  return OS-SELECT(x.left, i)
+else 
+  return OS-SELECT(x.right, i - r)

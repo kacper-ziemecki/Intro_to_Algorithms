@@ -1,0 +1,2 @@
+VebTreeMinimum(V)
+return V.min

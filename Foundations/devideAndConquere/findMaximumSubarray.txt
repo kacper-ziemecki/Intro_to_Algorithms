@@ -1,0 +1,14 @@
+findMaximumSubarray(A, low, high)
+if high == low 
+  return (low, high, A[low])
+else
+  mid = floor((low + high)/2)
+  (left-low, left-hight, left-sum) = findMaximumSubarray(A, low, mid)
+  (right-low, right-hight, right-sum) = findMaximumSubarray(A, mid + 1, high)
+  (cross-low, cross-hight, sross-sum) = findMaximumSubarray(A, low, mid, high)
+  if left-sum >= right-sum and left-sum >= cross-sum
+    return (left-low, right-high, left-sum)
+  else if right-sum >= left-sum and right-sum >= cross-sum
+    return (left-high, right-low, right-sum)
+  else
+    return (cross-high, cross-low, cross-sum)

@@ -1,0 +1,2 @@
+directAddressInsert(T , x)
+T[x.key] = x

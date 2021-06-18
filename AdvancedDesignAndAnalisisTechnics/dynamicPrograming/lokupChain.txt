@@ -1,0 +1,11 @@
+lokupChain(m, p, i, j)
+if m[i, j] < INFINITY
+  return m[i, j]
+if i == j
+  m[i, j] = 0
+else
+  for k = i to j - 1
+    q = LOKUP-CHAIN(m, p, i, k) + LOKUP-CHAIN(m, p, k + 1, j) + p i-1 p k p j
+    if q < m[i, j] 
+      m[i, j] = q
+return m[i, j]

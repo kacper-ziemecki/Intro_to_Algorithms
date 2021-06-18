@@ -1,0 +1,7 @@
+allocateObject()
+if free == NIL
+  error "out of space"
+else
+  x = free 
+  free = x.next
+  return x

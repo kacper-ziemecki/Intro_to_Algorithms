@@ -1,0 +1,9 @@
+printPath(G, s, v)
+if v == s
+  print s
+else if v.pi == NIL
+  print "no path from" s "to" v "exists"
+else
+  PRINT-PATH(G, x, v.pi)
+  print v
+  

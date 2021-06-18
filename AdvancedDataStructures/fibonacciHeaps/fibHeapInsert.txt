@@ -1,0 +1,13 @@
+fibHeapInsert(H, x)
+x.degree = 0 
+x.p = NIL
+x.child = NIL
+x.mark = FALSE
+if H.min == NIL
+  create a root list for H containing just x
+  H.min = x
+else
+  insert x into H's root list
+  if x.key < H.min.key
+    H.min = x
+H.n = H.n + 1

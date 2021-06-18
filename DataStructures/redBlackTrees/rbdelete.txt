@@ -1,0 +1,25 @@
+rbdelete(T, z)
+y =  z
+y-original-color = y.color
+if z.left == T.nil 
+  x = z.right
+  RB-TRANSPLANT(T, z, z.right)
+else if z.right == T.nil
+  x = z.left
+  RB-TRANSPLANT(T, z, z.left)
+else
+  y = TREE-MINIMUM(z.right) 
+  y-original-color = y.color
+  x = y.right
+  if y.p == z
+    x.p = y 
+  else
+    RB-TRANSPLANT(T, y, y.right)
+    y.right = z.right
+    y.right.p = y 
+  RB-TRANSPLANT(T, z, y) 
+  y.left = z.left
+  y.left.p = y
+  y.color = z.color
+if y-original-color == BLACK
+  RB-DELETE-FIXUP(T, x)

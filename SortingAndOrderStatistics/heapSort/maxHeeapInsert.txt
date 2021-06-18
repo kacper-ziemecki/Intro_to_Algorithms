@@ -1,0 +1,4 @@
+maxHeeapInsert(A, key)
+A.heap-size = A.heap-size + 1
+A[A.heap-size] = -INFINITY
+HEAP-INCREASE-KEY(A, A.heap-size, key)

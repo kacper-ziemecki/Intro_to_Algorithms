@@ -1,0 +1,10 @@
+fibHeapDecreaseKey(H, x, k)
+if k > x.key 
+  error "new key is greater than current key" 
+x.key = k
+y = x.p
+if y != NIL and x.key < y.key  
+  CUT(H, x, y) 
+  CASCADING-CUT(H, y)
+if x.key < H.min.key 
+  H.min = x

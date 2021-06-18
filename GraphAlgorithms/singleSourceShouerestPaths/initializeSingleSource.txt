@@ -1,0 +1,5 @@
+initializeSingleSource(G, s)
+for each vertex v E G.V   
+  v.d = INFINITY
+  V.pi = NIL
+s.d = 0

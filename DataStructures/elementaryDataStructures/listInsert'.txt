@@ -1,0 +1,5 @@
+listInsert'(L, x)
+x.next = L.nil.next
+L.nil.next.prev = x
+L.nil.next = x
+x.prev = L.nil

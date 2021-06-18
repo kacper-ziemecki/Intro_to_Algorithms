@@ -1,0 +1,6 @@
+genericMst(G, w)
+A = 0
+while A does not form a spaning tree 
+  find an edge (u, v) that is safe for A 
+  A = A U {(u, v)}
+return A

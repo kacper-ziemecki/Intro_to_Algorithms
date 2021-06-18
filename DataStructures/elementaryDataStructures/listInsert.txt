@@ -1,0 +1,6 @@
+listInsert(L, x)
+x.next = L.head
+if L.head != NIL
+  L.head.prev = x
+L.head = x
+x.prev = NIL

@@ -1,0 +1,8 @@
+cascadingCut(H, y)
+z = y.p
+if z != NIL
+  if y.mark == FALSE
+    y.mark = TRUE
+  else
+    CUT(H, y, z) 
+    CASCADING-CUT(H, z)

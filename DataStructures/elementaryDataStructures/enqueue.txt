@@ -1,0 +1,6 @@
+enqueue(Q, x)
+Q[Q.tail] = x
+if Q.tail == Q.length
+  Q.tail = 1
+else
+  Q.tail = Q.tail + 1

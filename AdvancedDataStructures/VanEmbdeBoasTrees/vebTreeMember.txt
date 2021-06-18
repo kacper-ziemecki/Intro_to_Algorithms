@@ -1,0 +1,8 @@
+vebTreeMember(V, x)
+if x == V.min or x == V.max
+  return TRUE
+else if V.u == 2
+  return FALSE
+else
+  return VRB-TREE-MEMBER(V.cluster[high(x), low(x)]) 
+  

@@ -1,0 +1,11 @@
+bTreeSearch(x, k)
+i = 1
+while i <= x.n and k > x.key i
+  i = i + 1
+if i <= x.n and k == x.key i 
+  return (x, i)
+else if x.leaf
+  return NIL
+else
+  DISK-READ(x, c i)
+  return B-TREE-SEARCH(x.c i, k)

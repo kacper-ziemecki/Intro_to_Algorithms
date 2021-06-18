@@ -1,0 +1,14 @@
+bTreeInsert(T, k)
+r == T.root 
+if r.n == 2t - 1
+  s = ALLOCATE-NODE()
+  T.root = s
+  s.leaf = FALSE
+  s.n = 0
+  s.c 1 = r 
+  B-TREE-SPLIT-CHILD(s, 1)
+  B-TREE-INSERT-NONFULL(s, k)
+  B-TREE-INSERT-NONFULL(r, k)
+else 
+  B-TREE-INSERT-NONFULL(r, k)
+

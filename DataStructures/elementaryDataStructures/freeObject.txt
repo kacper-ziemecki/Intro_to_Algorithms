@@ -1,0 +1,3 @@
+freeObject(x)
+x.next = free 
+free = x

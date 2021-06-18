@@ -1,0 +1,2 @@
+heapMaximum(A)
+return A[1]

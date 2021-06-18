@@ -1,0 +1,6 @@
+marge-sort(A, p, q)
+if p < r
+  q = floor((p + r)/ 2)
+  marge-sort(A, p, q)
+  marge-sort(A, q + 1, r)
+  marge(A, p, q, r)

@@ -1,0 +1,5 @@
+inOrderTreeWalk(x)
+if x != NIL
+  INORDER-TREE-WALK(x.left)
+  print x.key 
+  INORDER-TREE-WALK(x.right)

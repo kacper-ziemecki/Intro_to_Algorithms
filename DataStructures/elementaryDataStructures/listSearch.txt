@@ -1,0 +1,5 @@
+listSearch(L, k)
+x = L.head 
+while x != NIL and x.key != k 
+  x = x.next
+return x

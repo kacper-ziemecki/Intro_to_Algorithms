@@ -1,0 +1,23 @@
+vebTreePredesossor(V, x)
+if V.u == 2
+  if x == 1 and V.min == 0
+    return 0
+  else
+    return NIL
+else if V.max != NIL and x > V.max
+  return V.max
+else
+  min-low = VEB-TREE-MINIMUM(V.cluster[high(x)])
+  if min-low != NIL and low(x) > min-low
+    offset = VEB-TREE-PREDESESSOR(V.cluster[high(x)]), low(x))
+    return index(high(x), offset)
+  else
+    pred-cluster = VEB-TREE-PREDESESSOR(V.summary, high(x))
+    if succ-cluster == NIL
+      if V.min != NIL and x > V.min 
+        return V.min
+      else
+        return NIL
+    else
+      offset = VEB-TREE-MINIMUM(V.cluster[pred-cluster])
+      return index(pred-cluster, offset)

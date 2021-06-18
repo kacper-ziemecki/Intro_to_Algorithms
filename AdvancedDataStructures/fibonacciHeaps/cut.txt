@@ -1,0 +1,5 @@
+cut(H, x, y) 
+remove x from the child list of y, decremanig y.degree 
+add x to the roo of H
+x.p = NIL
+x.mark = FALSE

@@ -1,0 +1,3 @@
+makeSet(x)
+x.p = x
+x.rank = 0

@@ -1,0 +1,8 @@
+rbTransplant(T, u, v)
+if u.p == T.nil 
+  T.root = v
+else if u == u.p.left
+  u.p.left = v
+else 
+  u.p.right = v
+v.p = u.p

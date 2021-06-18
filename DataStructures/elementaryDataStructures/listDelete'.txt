@@ -1,0 +1,3 @@
+listDelete'(L, x)
+x.prev.next = x.next
+x.next.prev = x.prev

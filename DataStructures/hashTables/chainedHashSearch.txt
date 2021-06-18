@@ -1,0 +1,2 @@
+chainedHashSearch(T, k)
+search for an element with key k in list T[h(k)]

@@ -1,0 +1,19 @@
+bTreeInsertNonfull(x, k)
+i = x.n 
+if x.leaf
+  while i >= 1 and k < x.key i 
+    x.key i+1 = x.key i 
+    i = i - 1
+  x.key i+1 = k
+  x.n = x.n + 1
+  DISK-WRITE(x)
+else 
+  while i >= 1 and k < x.key i 
+    i = i - 1
+  i = i + 1
+  DISK-READ(x, c i)
+  if x.c i.n == 2t - 1
+    B-TREE-SPLIT-CHILD(x, i)
+    if k > x.key i  
+      i = i  +1
+  B-TREE-INSERT-NONFULL(x, c i, k)

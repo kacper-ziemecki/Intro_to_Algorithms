@@ -1,0 +1,2 @@
+VebTreeMaximum(V)
+return V.max
